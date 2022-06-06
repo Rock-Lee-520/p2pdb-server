@@ -1,0 +1,67 @@
+package driver_test
+
+import (
+	"sync"
+	"time"
+
+	"github.com/kkguan/p2pdb-server/driver"
+	"github.com/kkguan/p2pdb-store/memory"
+	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/kkguan/p2pdb-store/sql/information_schema"
+)
+
+type memTable struct {
+	DatabaseName string
+	TableName    string
+	Schema       sql.PrimaryKeySchema
+	Records      Records
+
+	once       sync.Once
+	dbProvider sql.DatabaseProvider
+}
+
+func (f *memTable) Resolve(name string, _ *driver.Options) (string, sql.DatabaseProvider, error) {
+	f.once.Do(func() {
+		table := memory.NewTable(f.TableName, f.Schema)
+
+		if f.Records != nil {
+			ctx := sql.NewEmptyContext()
+			for _, row := range f.Records {
+				table.Insert(ctx, sql.NewRow(row...))
+			}
+		}
+
+		database := memory.NewDatabase(f.DatabaseName)
+		database.AddTable(f.TableName, table)
+
+		pro := memory.NewMemoryDBProvider(
+			database,
+			information_schema.NewInformationSchemaDatabase())
+		f.dbProvider = pro
+	})
+
+	return name, f.dbProvider, nil
+}
+
+func personMemTable(database, table string) (*memTable, Records) {
+	records := Records{
+		[]V{"John Doe", "john@doe.com", []V{"555-555-555"}, time.Now()},
+		[]V{"John Doe", "johnalt@doe.com", []V{}, time.Now()},
+		[]V{"Jane Doe", "jane@doe.com", []V{}, time.Now()},
+		[]V{"Evil Bob", "evilbob@gmail.com", []V{"555-666-555", "666-666-666"}, time.Now()},
+	}
+
+	mtb := &memTable{
+		DatabaseName: database,
+		TableName:    table,
+		Schema: sql.NewPrimaryKeySchema(sql.Schema{
+			{Name: "name", Type: sql.Text, Nullable: false, Source: table},
+			{Name: "email", Type: sql.Text, Nullable: false, Source: table},
+			{Name: "phone_numbers", Type: sql.JSON, Nullable: false, Source: table},
+			{Name: "created_at", Type: sql.Timestamp, Nullable: false, Source: table},
+		}),
+		Records: records,
+	}
+
+	return mtb, records
+}
