@@ -19,8 +19,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kkguan/p2pdb-server/auth"
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 
 	"github.com/sanity-io/litter"
 	"github.com/sirupsen/logrus"

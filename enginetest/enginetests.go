@@ -28,15 +28,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"gopkg.in/src-d/go-errors.v1"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-server/auth"
-	"github.com/kkguan/p2pdb-server/test"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/analyzer"
-	"github.com/kkguan/p2pdb-store/sql/expression"
-	"github.com/kkguan/p2pdb-store/sql/information_schema"
-	"github.com/kkguan/p2pdb-store/sql/parse"
-	"github.com/kkguan/p2pdb-store/sql/plan"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-server/test"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/analyzer"
+	"github.com/Rock-liyi/p2pdb-store/sql/expression"
+	"github.com/Rock-liyi/p2pdb-store/sql/information_schema"
+	"github.com/Rock-liyi/p2pdb-store/sql/parse"
+	"github.com/Rock-liyi/p2pdb-store/sql/plan"
 )
 
 // Tests a variety of queries against databases and tables provided by the given harness.

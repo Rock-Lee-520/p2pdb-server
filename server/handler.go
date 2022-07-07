@@ -31,14 +31,14 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/src-d/go-errors.v1"
 
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-server/internal/sockstate"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/expression"
+	"github.com/Rock-liyi/p2pdb-store/sql/parse"
+	"github.com/Rock-liyi/p2pdb-store/sql/plan"
 	debug "github.com/favframework/debug"
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-server/auth"
-	"github.com/kkguan/p2pdb-server/internal/sockstate"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/expression"
-	"github.com/kkguan/p2pdb-store/sql/parse"
-	"github.com/kkguan/p2pdb-store/sql/plan"
 )
 
 var errConnectionNotFound = errors.NewKind("connection not found: %c")

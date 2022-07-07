@@ -1,4 +1,4 @@
-module github.com/kkguan/p2pdb-server
+module github.com/Rock-liyi/p2pdb-server
 
 go 1.17
 
@@ -29,7 +29,7 @@ require (
 
 require (
 	github.com/caarlos0/env/v6 v6.9.1
-	github.com/kkguan/p2pdb-store v0.0.6
+	github.com/Rock-liyi/p2pdb-store v0.0.6
 )
 
 require (
@@ -51,8 +51,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 )
 
-replace github.com/kkguan/p2pdb-server => ../p2pdb-server
+replace github.com/Rock-liyi/p2pdb-server => ../p2pdb-server
 
-replace github.com/kkguan/p2pdb-store => ../p2pdb-store
+replace github.com/Rock-liyi/p2pdb-store => ../p2pdb-store
 
-replace github.com/kkguan/p2pdb-store/sqlite; => ../p2pdb-store/sqlite
+replace github.com/Rock-liyi/p2pdb-store/sqlite; => ../p2pdb-store/sqlite

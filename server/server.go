@@ -21,7 +21,7 @@ import (
 	"github.com/dolthub/vitess/go/mysql"
 	"github.com/opentracing/opentracing-go"
 
-	sqle "github.com/kkguan/p2pdb-server"
+	sqle "github.com/Rock-liyi/p2pdb-server"
 )
 
 type ServerEventListener interface {

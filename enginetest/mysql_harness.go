@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kkguan/p2pdb-server/enginetest/mysqlshim"
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-server/enginetest/mysqlshim"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // MySQLHarness is a harness for a local MySQL server. This will modify databases and tables as the tests see fit, which

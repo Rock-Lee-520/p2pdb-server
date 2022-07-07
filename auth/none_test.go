@@ -17,7 +17,7 @@ package auth_test
 import (
 	"testing"
 
-	"github.com/kkguan/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-server/auth"
 )
 
 func TestNoneAuthentication(t *testing.T) {

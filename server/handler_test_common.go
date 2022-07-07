@@ -26,9 +26,9 @@ import (
 	"github.com/dolthub/vitess/go/mysql"
 	"github.com/stretchr/testify/require"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 func setupMemDB(require *require.Assertions) *sqle.Engine {

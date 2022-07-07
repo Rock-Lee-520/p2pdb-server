@@ -1,7 +1,7 @@
 
 中文 | [English](./README-EN.md)
 
-**p2pdb-server** 一个mysql 语法的服务器端, 兼容90%mysql 语法，可使用任一一种mysql 客户端连接,包括PHP、JAVA、GO、RUBY、PYTHON等主流语言的兼容（正积极测试中）,需要注意的是,p2pdb-server 只是一个sql查询接收器,本身并不提供真实的数据存储,在p2pdb中 数据存储使用[p2pdb-store](https://github.com/kkguan/p2pdb-store)模块实现
+**p2pdb-server** 一个mysql 语法的服务器端, 兼容90%mysql 语法，可使用任一一种mysql 客户端连接,包括PHP、JAVA、GO、RUBY、PYTHON等主流语言的兼容（正积极测试中）,需要注意的是,p2pdb-server 只是一个sql查询接收器,本身并不提供真实的数据存储,在p2pdb中 数据存储使用[p2pdb-store](https://github.com/Rock-liyi/p2pdb-store)模块实现
 
 
 ### SQL 语法
@@ -17,17 +17,17 @@ p2pdb-server的目标是支持 MySQL 所做的 100% 的语句。我们不断向�
 
 ## 安装
 
-模块路径在 `github.com/kkguan/p2pdb-server`
+模块路径在 `github.com/Rock-liyi/p2pdb-server`
 
 通过go get安装:
 
 ```
-go get github.com/kkguan/p2pdb-server
+go get github.com/Rock-liyi/p2pdb-server
 ```
 
 ## Go 文档
 
-* [p2pdb-server godoc](https://godoc.org/github.com/kkguan/p2pdb-server)
+* [p2pdb-server godoc](https://godoc.org/github.com/Rock-liyi/p2pdb-server)
 
 ## 致谢
 
@@ -35,7 +35,7 @@ go get github.com/kkguan/p2pdb-server
 真诚的感谢source-d组织以及dolthub组织的贡献，是因为你们的前面的铺垫才有了后来的p2pdb-server
 
 ## 部分代码参考来源
-[go-mysql-server](http://github.com/kkguan/p2pdb-server):遵守Apache License 2.0协议
+[go-mysql-server](http://github.com/Rock-liyi/p2pdb-server):遵守Apache License 2.0协议
 
 ## License
 

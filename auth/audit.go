@@ -21,7 +21,7 @@ import (
 	"github.com/dolthub/vitess/go/mysql"
 	"github.com/sirupsen/logrus"
 
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // AuditMethod is called to log the audit trail of actions.

@@ -18,7 +18,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 func getOKResult(ctx *sql.Context, rows sql.RowIter) (sql.OkResult, bool, error) {

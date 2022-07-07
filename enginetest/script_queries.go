@@ -17,10 +17,10 @@ package enginetest
 import (
 	"gopkg.in/src-d/go-errors.v1"
 
-	"github.com/kkguan/p2pdb-store/sql/analyzer"
+	"github.com/Rock-liyi/p2pdb-store/sql/analyzer"
 
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/plan"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/plan"
 )
 
 type ScriptTest struct {

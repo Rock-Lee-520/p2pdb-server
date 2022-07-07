@@ -22,12 +22,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-server/auth"
-	"github.com/kkguan/p2pdb-server/server"
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/analyzer"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-server/server"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/analyzer"
 )
 
 const port = 33336

@@ -19,7 +19,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/kkguan/p2pdb-server/auth"
+	"github.com/Rock-liyi/p2pdb-server/auth"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/stretchr/testify/require"

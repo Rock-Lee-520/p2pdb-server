@@ -14,7 +14,7 @@
 
 package enginetest
 
-import "github.com/kkguan/p2pdb-store/sql"
+import "github.com/Rock-liyi/p2pdb-store/sql"
 
 var JsonScripts = []ScriptTest{
 	{

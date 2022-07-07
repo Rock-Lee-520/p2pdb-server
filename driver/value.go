@@ -23,8 +23,8 @@ import (
 
 	"github.com/dolthub/vitess/go/sqltypes"
 
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/expression"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/expression"
 )
 
 // ErrUnsupportedType is returned when a query argument of an unsupported type is passed to a statement

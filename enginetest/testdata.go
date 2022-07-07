@@ -21,8 +21,8 @@ import (
 	"github.com/dolthub/vitess/go/sqltypes"
 	"github.com/stretchr/testify/require"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-store/sql"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // returns whether to include the table name given in the test data setup. A nil set of included tables will include

@@ -20,7 +20,7 @@ import (
 
 	"github.com/dolthub/vitess/go/vt/proto/query"
 
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // Rows is an iterator over an executed query's results.

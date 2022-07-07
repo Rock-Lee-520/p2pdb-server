@@ -21,9 +21,9 @@ import (
 	"net/url"
 	"sync"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/analyzer"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/analyzer"
 )
 
 // ScanKind indicates how values should be scanned.

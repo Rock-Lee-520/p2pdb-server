@@ -22,7 +22,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gocraft/dbr/v2"
 
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // SQLITEShim is a shim for a local SQLITE server. Ensure that a SQLITE instance is running prior to using this shim. Note:

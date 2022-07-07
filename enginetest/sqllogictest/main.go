@@ -21,8 +21,8 @@ import (
 
 	"github.com/dolthub/sqllogictest/go/logictest"
 
-	"github.com/kkguan/p2pdb-server/enginetest"
-	"github.com/kkguan/p2pdb-server/enginetest/sqllogictest/harness"
+	"github.com/Rock-liyi/p2pdb-server/enginetest"
+	"github.com/Rock-liyi/p2pdb-server/enginetest/sqllogictest/harness"
 )
 
 type MemoryResultRecord struct {

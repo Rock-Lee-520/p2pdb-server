@@ -15,7 +15,7 @@
 package enginetest
 
 import (
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 // TransactionTest is a script to test transaction correctness. It's similar to ScriptTest, but its assertions name

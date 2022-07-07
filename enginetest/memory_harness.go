@@ -18,8 +18,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 type IndexDriverInitalizer func([]sql.Database) sql.IndexDriver

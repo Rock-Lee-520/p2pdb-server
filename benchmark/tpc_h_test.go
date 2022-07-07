@@ -24,10 +24,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	sqle "github.com/kkguan/p2pdb-server"
+	sqle "github.com/Rock-liyi/p2pdb-server"
 
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 var scriptsPath = "../_scripts/tpc-h/"

@@ -1,4 +1,4 @@
-module github.com/kkguan/p2pdb-server/integration/go
+module github.com/Rock-liyi/p2pdb-server/integration/go
 
 go 1.14
 

@@ -17,7 +17,7 @@ package enginetest
 import (
 	"math"
 
-	"github.com/kkguan/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql"
 )
 
 var VariableQueries = []ScriptTest{

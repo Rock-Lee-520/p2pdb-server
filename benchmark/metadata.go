@@ -14,7 +14,7 @@
 
 package benchmark
 
-import "github.com/kkguan/p2pdb-store/sql"
+import "github.com/Rock-liyi/p2pdb-store/sql"
 
 type tableMetadata struct {
 	schema sql.PrimaryKeySchema

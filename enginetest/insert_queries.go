@@ -19,8 +19,8 @@ import (
 
 	"github.com/dolthub/vitess/go/mysql"
 
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/expression"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/expression"
 )
 
 var InsertQueries = []WriteQueryTest{

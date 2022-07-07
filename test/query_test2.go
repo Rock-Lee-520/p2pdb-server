@@ -20,10 +20,10 @@ import (
 	"io"
 	"testing"
 
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sqlite"
 	debug "github.com/favframework/debug"
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sqlite"
 	"github.com/stretchr/testify/require"
 )
 

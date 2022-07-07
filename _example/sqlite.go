@@ -17,14 +17,14 @@ package main
 import (
 	//"log"
 
-	sqle "github.com/kkguan/p2pdb-server"
-	"github.com/kkguan/p2pdb-server/auth"
-	conf "github.com/kkguan/p2pdb-server/config"
-	"github.com/kkguan/p2pdb-server/server"
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/information_schema"
-	"github.com/kkguan/p2pdb-store/sqlite"
+	sqle "github.com/Rock-liyi/p2pdb-server"
+	"github.com/Rock-liyi/p2pdb-server/auth"
+	conf "github.com/Rock-liyi/p2pdb-server/config"
+	"github.com/Rock-liyi/p2pdb-server/server"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/information_schema"
+	"github.com/Rock-liyi/p2pdb-store/sqlite"
 	log "github.com/sirupsen/logrus"
 )
 

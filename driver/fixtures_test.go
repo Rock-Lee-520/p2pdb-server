@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kkguan/p2pdb-server/driver"
-	"github.com/kkguan/p2pdb-store/memory"
-	"github.com/kkguan/p2pdb-store/sql"
-	"github.com/kkguan/p2pdb-store/sql/information_schema"
+	"github.com/Rock-liyi/p2pdb-server/driver"
+	"github.com/Rock-liyi/p2pdb-store/memory"
+	"github.com/Rock-liyi/p2pdb-store/sql"
+	"github.com/Rock-liyi/p2pdb-store/sql/information_schema"
 )
 
 type memTable struct {
