@@ -102,7 +102,7 @@ func NewServer(cfg Config, e *sqle.Engine, sb SessionBuilder, listener ServerEve
 // Start starts accepting connections on the server.
 func (s *Server) Start() error {
 
-	log.Println("Server start function finish =====")
+	log.Println("The p2pdb server has been started , you can use any mysql client to connecte it")
 	s.Listener.Accept()
 	return nil
 }
