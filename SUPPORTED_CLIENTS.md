@@ -1,7 +1,7 @@
 # Supported clients
 
 These are the clients we actively test against to check that they are
-compatible with go-mysql-server. Other clients may also work, but we
+compatible with p2pdb-server. Other clients may also work, but we
 don't check on every build if we remain compatible with them.
 
 - Python
