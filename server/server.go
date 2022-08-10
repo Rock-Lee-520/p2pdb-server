@@ -15,7 +15,8 @@
 package server
 
 import (
-	"log"
+	log "github.com/Rock-liyi/p2pdb/infrastructure/util/log"
+
 	"time"
 
 	"github.com/dolthub/vitess/go/mysql"
@@ -102,7 +103,7 @@ func NewServer(cfg Config, e *sqle.Engine, sb SessionBuilder, listener ServerEve
 // Start starts accepting connections on the server.
 func (s *Server) Start() error {
 
-	log.Println("The p2pdb server has been started , you can use any mysql client to connecte it")
+	log.Info("The p2pdb server has been started , you can use any mysql client to connecte it")
 	s.Listener.Accept()
 	return nil
 }
