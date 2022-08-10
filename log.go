@@ -26,6 +26,7 @@ const ConnectTimeLogKey = "connectTime"
 func init() {
 	// V quickly checks if the logging verbosity meets a threshold.
 	vtlog.V = func(level glog.Level) glog.Verbose {
+		logrus.SetLevel(logrus.ErrorLevel)
 		lvl := logrus.GetLevel()
 		switch int32(level) {
 		case 0:
